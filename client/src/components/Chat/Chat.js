@@ -29,6 +29,7 @@ const Chat = ({ location }) => {
     setName(name)
 
     socket.emit('join', { name, room }, (error) => {
+      //console.log("hiii");
       if(error) {
         alert(error);
       }
@@ -61,7 +62,9 @@ const Chat = ({ location }) => {
           <Messages messages={messages} name={name} />
           <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
       </div>
+      <div className="sidebar">
       <TextContainer users={users}/>
+      </div>
     </div>
   );
 }

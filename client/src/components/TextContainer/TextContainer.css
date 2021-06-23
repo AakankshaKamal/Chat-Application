@@ -1,17 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Satisfy&display=swap');
 .textContainer {
-    display: flex;
+    
+    float: right;
     flex-direction: column;
-    margin-left: 100px;
-    color: white;
-    height: 60%;
+   
+  
+    height: 100vh;
+    width: 30%;
     justify-content: space-between;
+    background-color: transparent;
+    border: 1px solid;
+  padding: 10px;
+  box-shadow: 15px 10px;
   }
   
   .activeContainer {
     display: flex;
     align-items: center;
     margin-bottom: 50%;
-    background-color: red;
+    background-color: transparent;
+    opacity: 0.5;
+    font-family: 'Indie Flower', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Satisfy', cursive;
   }
   
   .activeItem {
@@ -25,6 +36,10 @@
   
   .textContainer h1 {
     margin-bottom: 0px;
+    font-size: 16px;
+    font-family: 'Indie Flower', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Satisfy', cursive;
   }
   
   @media (min-width: 320px) and (max-width: 1200px) {
